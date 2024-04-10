@@ -1,0 +1,35 @@
+spring:
+    application:
+        name: 温州市民用建筑能耗信息管理系统数据采集器上行传输通信
+    jackson:
+        time-zone: GMT+8
+
+wz:
+    host: iot.wznhjc.cn
+    port: 8191
+    secret-key: IJKLMNOPQRSTUVWX
+    # 建筑物ID
+    building-id: '330381A100'
+    gateway-id: '01'
+    gateway-name: '网管名称'
+
+sensor:
+    -   id: 1
+        djId: '001'
+        name: 'XXX食堂电表'
+        djNum14: '00123456789000'
+        djNum12: '123456789000'
+        electricalType: '01D00'
+    -   id: 1
+        djId: '002'
+        name: 'XXX行政楼电表'
+        djNum14: '00123456789001'
+        djNum12: '123456789001'
+        electricalType: '01B00'
+
+logging:
+    charset:
+        file: UTF-8
+        console: UTF-8
+    level:
+        io.github.luoyikuan.wznh: info
