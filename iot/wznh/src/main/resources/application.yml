@@ -20,7 +20,7 @@ sensor:
         djNum14: '00123456789000'
         djNum12: '123456789000'
         electricalType: '01D00'
-    -   id: 1
+    -   id: 2
         djId: '002'
         name: 'XXX行政楼电表'
         djNum14: '00123456789001'
